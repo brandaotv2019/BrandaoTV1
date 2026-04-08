@@ -21,7 +21,7 @@
         }
         .btn-link {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(239, 68, 68, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         .btn-link:hover {
             transform: translateY(-3px);
@@ -38,22 +38,57 @@
             70% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
             100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
         }
+        
+        /* Animação de pulsação aprimorada para o texto */
+        @keyframes text-glow-pulse {
+            0%, 100% { 
+                transform: scale(1); 
+                filter: drop-shadow(0 0 2px rgba(239, 68, 68, 0));
+            }
+            50% { 
+                transform: scale(1.02); 
+                filter: drop-shadow(0 0 8px rgba(239, 68, 68, 0.8));
+            }
+        }
+
         .pulse {
             animation: pulse-red 2s infinite;
+        }
+
+        .text-impact {
+            animation: text-glow-pulse 3s ease-in-out infinite;
+            background: linear-gradient(to bottom, #ffffff 30%, #f87171 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            white-space: nowrap; /* Garante que não quebre linha */
+        }
+
+        /* Cor específica para o WhatsApp no hover */
+        .btn-whatsapp:hover {
+            background: #25d366 !important;
+            box-shadow: 0 10px 20px -5px rgba(37, 211, 102, 0.5) !important;
         }
     </style>
 </head>
 <body class="flex flex-col items-center p-4">
 
-    <!-- Header / Área da Logo -->
-    <div class="w-full max-w-md mt-10 mb-6 flex flex-col items-center">
-        <div class="w-64 mb-4 flex items-center justify-center">
-             <img src="https://i.ibb.co/zVyKy2rG/Logo-IPTV1.png" alt="Brandão TV Logo" class="logo-glow w-full h-auto object-contain">
+    <!-- Cabeçalho / Área da Logotipo -->
+    <div class="w-full max-w-md mt-10 mb-8 flex flex-col items-center text-center">
+        <div class="w-64 mb-6 flex items-center justify-center">
+             <img src="https://i.ibb.co/zVyKy2rG/Logo-IPTV1.png" alt="Logotipo Brandão TV" class="logo-glow w-full h-auto object-contain">
         </div>
-        <p class="text-gray-400 text-center mt-2 px-4">📺 BrandãoTV - O Melhor do Entretenimento Online!</p>
+        
+        <!-- Texto ajustado para ficar em uma única linha -->
+        <div class="px-2 w-full overflow-hidden">
+            <h1 class="text-impact text-base sm:text-lg md:text-xl font-black uppercase tracking-tight italic">
+                O Melhor do Entretenimento Online!
+            </h1>
+            <div class="h-1 w-12 bg-red-600 mx-auto mt-2 rounded-full opacity-50"></div>
+        </div>
     </div>
 
-    <!-- Seção de Links Principais -->
+    <!-- Secção de Links Principais -->
     <div class="w-full max-w-md space-y-4">
         
         <!-- Link de Teste Grátis -->
@@ -80,14 +115,26 @@
             <i class="fa-solid fa-chevron-right opacity-50"></i>
         </a>
 
-        <!-- Link para o outro Mini Site (Loja de Aplicativos) -->
-        <a href="LINK_DO_SEU_OUTRO_SITE_AQUI" target="_blank" class="btn-link glass-card flex items-center p-4 w-full">
+        <!-- Link para Loja de Aplicações -->
+        <a href=""C:\Users\tbran\Downloads\Loja de App.html"" target="_blank" class="btn-link glass-card flex items-center p-4 w-full">
             <div class="bg-gray-800 text-white rounded-full min-w-[40px] h-10 flex items-center justify-center mr-4">
                 <i class="fa-solid fa-store"></i>
             </div>
             <div class="flex-grow text-left">
-                <p class="font-bold text-white">Loja de Aplicativos</p>
-                <p class="text-xs text-gray-400">Acesse nossa central de downloads</p>
+                <p class="font-bold text-white">Loja de Aplicações</p>
+                <p class="text-xs text-gray-400">Aceda à nossa central de downloads</p>
+            </div>
+            <i class="fa-solid fa-chevron-right opacity-50"></i>
+        </a>
+
+        <!-- Link de Revenda (Agora em Último) -->
+        <a href="https://wa.me/5515997772881?text=Olá! Gostaria de saber mais sobre como ser um revendedor." target="_blank" class="btn-link glass-card flex items-center p-4 w-full">
+            <div class="bg-gray-800 text-white rounded-full min-w-[40px] h-10 flex items-center justify-center mr-4">
+                <i class="fa-solid fa-users-gear"></i>
+            </div>
+            <div class="flex-grow text-left">
+                <p class="font-bold text-white">Seja um Revendedor</p>
+                <p class="text-xs text-gray-400">Trabalhe connosco e tenha a sua própria renda</p>
             </div>
             <i class="fa-solid fa-chevron-right opacity-50"></i>
         </a>
@@ -111,7 +158,7 @@
 
     <footer class="mt-12 mb-8">
         <p class="text-gray-600 text-[10px] uppercase tracking-widest text-center">
-            &copy; 2024 Brandão TV - Conteúdo Exclusivo
+            &copy; 2026 Brandão TV
         </p>
     </footer>
 
