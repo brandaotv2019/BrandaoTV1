@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandão TV - Links Oficiais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: radial-gradient(circle at top, #1a1a1a 0%, #000000 100%);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
+        .btn-link {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+        .btn-link:hover {
+            transform: translateY(-3px);
+            background: #ef4444;
+            box-shadow: 0 10px 20px -5px rgba(239, 68, 68, 0.5);
+            border-color: transparent;
+        }
+        /* Efeito de brilho na logo */
+        .logo-glow {
+            filter: drop-shadow(0 0 15px rgba(239, 68, 68, 0.5));
+        }
+        @keyframes pulse-red {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+        .pulse {
+            animation: pulse-red 2s infinite;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center p-4">
+
+    <!-- Header / Área da Logo -->
+    <div class="w-full max-w-md mt-10 mb-6 flex flex-col items-center">
+        <div class="w-64 mb-4 flex items-center justify-center">
+             <img src="https://i.ibb.co/zVyKy2rG/Logo-IPTV1.png" alt="Brandão TV Logo" class="logo-glow w-full h-auto object-contain">
+        </div>
+        <p class="text-gray-400 text-center mt-2 px-4">📺 BrandãoTV - O Melhor do Entretenimento Online!</p>
+    </div>
+
+    <!-- Seção de Links Principais -->
+    <div class="w-full max-w-md space-y-4">
+        
+        <!-- Link de Teste Grátis -->
+        <a href="https://wa.me/5515997772881?text=Olá! Gostaria de um teste grátis." target="_blank" class="pulse btn-link glass-card flex items-center p-4 w-full bg-red-600 !bg-opacity-90">
+            <div class="bg-white text-red-600 rounded-full min-w-[40px] h-10 flex items-center justify-center mr-4">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+            </div>
+            <div class="flex-grow text-left">
+                <p class="font-bold text-white">Solicitar Teste Grátis</p>
+                <p class="text-xs opacity-90 text-white">Atendimento imediato via WhatsApp</p>
+            </div>
+            <i class="fa-solid fa-chevron-right opacity-50"></i>
+        </a>
+
+        <!-- Link de Planos -->
+        <a href="https://i.ibb.co/Q75cRQQk/csdgs.png" target="_blank" class="btn-link glass-card flex items-center p-4 w-full">
+            <div class="bg-gray-800 text-white rounded-full min-w-[40px] h-10 flex items-center justify-center mr-4">
+                <i class="fa-solid fa-image"></i>
+            </div>
+            <div class="flex-grow text-left">
+                <p class="font-bold text-white">Ver Planos e Preços</p>
+                <p class="text-xs text-gray-400">Clique para ver a nossa tabela atualizada</p>
+            </div>
+            <i class="fa-solid fa-chevron-right opacity-50"></i>
+        </a>
+
+        <!-- Link para o outro Mini Site (Loja de Aplicativos) -->
+        <a href="LINK_DO_SEU_OUTRO_SITE_AQUI" target="_blank" class="btn-link glass-card flex items-center p-4 w-full">
+            <div class="bg-gray-800 text-white rounded-full min-w-[40px] h-10 flex items-center justify-center mr-4">
+                <i class="fa-solid fa-store"></i>
+            </div>
+            <div class="flex-grow text-left">
+                <p class="font-bold text-white">Loja de Aplicativos</p>
+                <p class="text-xs text-gray-400">Acesse nossa central de downloads</p>
+            </div>
+            <i class="fa-solid fa-chevron-right opacity-50"></i>
+        </a>
+
+    </div>
+
+    <!-- Redes Sociais -->
+    <div class="flex space-x-6 mt-10">
+        <a href="https://www.instagram.com/brandao.tv/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fa-brands fa-instagram text-2xl"></i>
+        </a>
+        
+        <a href="https://www.facebook.com/profile.php?id=61574311328495" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fa-brands fa-facebook text-2xl"></i>
+        </a>
+        
+        <a href="https://t.me/Brandao_TV" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fa-brands fa-telegram text-2xl"></i>
+        </a>
+    </div>
+
+    <footer class="mt-12 mb-8">
+        <p class="text-gray-600 text-[10px] uppercase tracking-widest text-center">
+            &copy; 2024 Brandão TV - Conteúdo Exclusivo
+        </p>
+    </footer>
+
+</body>
+</html>
