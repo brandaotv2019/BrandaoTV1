@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandão TV - Links Oficiais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: radial-gradient(circle at top, #1a1a1a 0%, #000000 100%);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
+        .btn-link {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .btn-link:hover {
+            transform: translateY(-3px);
+            background: #ef4444;
+            box-shadow: 0 10px 20px -5px rgba(239, 68, 68, 0.5);
+            border-color: transparent;
+        }
+        /* Efeito de brilho na logo */
+        .logo-glow {
+            filter: drop-shadow(0 0 15px rgba(239, 68, 68, 0.5));
+        }
+        @keyframes pulse-red {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+        
+        /* Animação de pulsação aprimorada para o texto */
+        @keyframes text-glow-pulse {
+            0%, 100% { 
+                transform: scale(1); 
+                filter: drop-shadow(0 0 2px rgba(239, 68, 68, 0));
+            }
+            50% { 
+                transform: scale(1.02); 
+                filter: drop-shadow(0 0 8px rgba(239, 68, 68, 0.8));
+            }
+        }
+
+        .pulse {
+            animation: pulse-red 2s infinite;
+        }
+
+        .text-impact {
+            animation: text-glow-pulse 3s ease-in-out infinite;
+            background: linear-gradient(to bottom, #ffffff 30%, #f87171 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            white-space: nowrap; /* Garante que não quebre linha */
+        }
+
+        /* Cor específica para o WhatsApp no hover */
+        .btn-whatsapp:hover {
+            background: #25d366 !important;
+            box-shadow: 0 10px 20px -5px rgba(37, 211, 102, 0.5) !important;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center p-4">
+
+    <!-- Cabeçalho / Área da Logotipo -->
+    <div class="w-full max-w-md mt-10 mb-8 flex flex-col items-center text-center">
+        <div class="w-64 mb-6 flex items-center justify-center">
+             <img src="https://i.ibb.co/zVyKy2rG/Logo-IPTV1.png" alt="Logotipo Brandão TV" class="logo-glow w-full h-auto object-contain">
+        </div>
+        
+        <!-- Texto ajustado para ficar em uma única linha -->
+        <div class="px-2 w-full overflow-hidden">
+            <h1 class="text-impact text-base sm:text-lg md:text-xl font-black uppercase tracking-tight italic">
+                O Melhor do Entretenimento Online!
+            </h1>
+            <div class="h-1 w-12 bg-red-600 mx-auto mt-2 rounded-full opacity-50"></div>
+        </div>
+    </div>
+
+    <!-- Secção de Links Principais -->
+    <div class="w-full max-w-md space-y-4">
+        
+        <!-- Link de Download Smart TV (VERMELHO E COM PULSO) -->
+        <a href="https://i.ibb.co/QvmYtymH/rsfgagsdsgfd.png" target="_blank" class="btn-link glass-card flex items-center p-4 w-full">
+            <div class="bg-gray-800 text-white rounded-full min-w-[40px] h-10 flex items-center justify-center mr-4 shadow-lg">
+                <i class="fa-solid fa-tv text-lg"></i>
+            </div>
+            <div class="flex-grow text-left text-white">
+                <p class="font-bold text-lg leading-tight">Baixar Aplicativo SmarTV</p>
+                <p class="text-xs opacity-90 font-medium">Samsung, LG, Demais SmarTV (Consultar Aplicativos)</p>
+            </div>
+            <i class="fa-solid fa-chevron-right text-white opacity-70"></i>
+        </a>
+
+        <!-- Link de Download Android -->
+        <a href="https://a.wcapps.top/bra.apk" target="_blank" class="btn-link glass-card flex items-center p-4 w-full">
+            <div class="bg-gray-800 text-white rounded-full min-w-[40px] h-10 flex items-center justify-center mr-4">
+                <i class="fa-brands fa-android text-xl"></i>
+            </div>
+            <div class="flex-grow text-left text-white">
+                <p class="font-bold">Baixar Aplicativo Android</p>
+                <p class="text-xs text-gray-400">Versão mais recente (APK)</p>
+            </div>
+            <i class="fa-solid fa-download opacity-30"></i>
+        </a>
+
+        <!-- Link de Download iOS -->
+        <a href="https://apps.apple.com/br/app/smarters-player-lite/id1628995509" target="_blank" class="btn-link glass-card flex items-center p-4 w-full">
+            <div class="bg-gray-800 text-white rounded-full min-w-[40px] h-10 flex items-center justify-center mr-4">
+                <i class="fa-brands fa-apple text-xl"></i>
+            </div>
+            <div class="flex-grow text-left text-white">
+                <p class="font-bold">Baixar Aplicativo iOS</p>
+                <p class="text-xs text-gray-400">iPhone e iPad (App Store)</p>
+            </div>
+            <i class="fa-solid fa-chevron-right opacity-30"></i>
+        </a>
+
+        <!-- Link de Download PC e Notebook -->
+        <a href="http://bit.ly/4tuNwlj" target="_blank" class="btn-link glass-card flex items-center p-4 w-full">
+            <div class="bg-gray-800 text-white rounded-full min-w-[40px] h-10 flex items-center justify-center mr-4">
+                <i class="fa-brands fa-windows text-lg"></i>
+            </div>
+            <div class="flex-grow text-left text-white">
+                <p class="font-bold">Baixar para PC e Notebook</p>
+                <p class="text-xs text-gray-400">Versão Windows (Computador)</p>
+            </div>
+            <i class="fa-solid fa-laptop opacity-30"></i>
+        </a>
+
+        <!-- Link Suporte WhatsApp -->
+        <a href="https://wa.me/5515997772881?text=Olá! Preciso de ajuda com o aplicativo." target="_blank" class="btn-link btn-whatsapp glass-card flex items-center p-4 w-full">
+            <div class="bg-green-500 text-white rounded-full min-w-[40px] h-10 flex items-center justify-center mr-4">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+            </div>
+            <div class="flex-grow text-left text-white">
+                <p class="font-bold">Suporte & Vendas</p>
+                <p class="text-xs text-gray-400">Fale connosco pelo WhatsApp</p>
+            </div>
+            <i class="fa-solid fa-comment opacity-30"></i>
+        </a>
+
+    </div>
+
+    <!-- Redes Sociais -->
+    <div class="flex space-x-6 mt-10">
+        <a href="https://www.instagram.com/brandao.tv/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fa-brands fa-instagram text-2xl"></i>
+        </a>
+        
+        <a href="https://www.facebook.com/profile.php?id=61574311328495" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fa-brands fa-facebook text-2xl"></i>
+        </a>
+        
+        <a href="https://t.me/Brandao_TV" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fa-brands fa-telegram text-2xl"></i>
+        </a>
+    </div>
+
+    <footer class="mt-12 mb-8">
+        <p class="text-gray-600 text-[10px] uppercase tracking-widest text-center">
+            &copy; 2026 Brandão TV
+        </p>
+    </footer>
+
+</body>
+</html>
